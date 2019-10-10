@@ -1,0 +1,66 @@
+@import "/pages/iconfont.wxss";
+
+swiper,swiper image{
+  width:100%;
+  height:600rpx;
+}
+
+.chooseCard {
+  margin-top: 20rpx;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 32rpx;
+  color: #000;
+  line-height: 100rpx;
+  padding-left: 30rpx;
+}
+
+.carItem{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
+.cardChild {
+  width: 40%;
+  background: #ad0;
+  text-align: center;
+  box-shadow: 0 10rpx 10rpx #ababab;
+  margin-bottom: 40rpx;
+  border-radius: 20rpx;
+}
+
+.cardChild image {
+  width: 100%;
+  height: 200rpx;
+}
+
+.cardName {
+  padding-bottom: 10rpx;
+  font-size: bold;
+}
+
+.history{
+  color: #ababab;
+  height: 200rpx;
+  line-height: 200rpx;
+  text-align: center;
+}
+
+.info{
+  width: 94%;
+  color: #ababab;
+  margin: 0 auto;
+  border-top: 1rpx solid #ababab;
+  line-height: 100rpx;
+  height: 100rpx;
+  text-align: center;
+}
