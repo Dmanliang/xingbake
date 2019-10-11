@@ -8,14 +8,14 @@
 
 <view class="chooseCard">
   <view class="title">请朋友喝咖啡</view>
-  <view class="carItem">
+  <view class="carItem" bindtap="ToDetails">
     <view class="cardChild" wx:for="{{cardBeanOne}}" wx:key="{{index}}">
       <image src="{{item.imgUrl}}"></image>
       <view class="cardName">{{item.cardName}}</view>
     </view>
   </view>
   <view class="title">星礼卡表心愿</view>
-  <view class="carItem">
+  <view class="carItem" bindtap="ToDetails">
     <view class="cardChild" wx:for="{{cardBeanTwo}}" wx:key="{{index}}">
       <image src="{{item.imgUrl}}"></image>
       <view class="cardName">{{item.cardName}}</view>

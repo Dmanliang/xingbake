@@ -15,18 +15,19 @@ Page({
     interval: 2000,
     duration: 1000,
     circular: true,
-    cardBeanOne:[{
-      "cardName":"给特别的你",
-      "imgUrl":"/image/treat01.png"
-    },
+    cardBeanOne: [{
+        "cardName": "给特别的你",
+        "imgUrl": "/image/treat01.png"
+      },
       {
         "cardName": "我想对你说",
         "imgUrl": "/image/treat02.png"
-      }],
+      }
+    ],
     cardBeanTwo: [{
-      "cardName": "来星巴克约会吧",
-      "imgUrl": "/image/card01.jpg"
-    },
+        "cardName": "来星巴克约会吧",
+        "imgUrl": "/image/card01.jpg"
+      },
       {
         "cardName": "爱要大声说出来",
         "imgUrl": "/image/card02.jpg"
@@ -49,7 +50,14 @@ Page({
       }, {
         "cardName": "生日快乐",
         "imgUrl": "/image/card08.jpg"
-      },]
+      },
+    ]
+  },
+
+  ToDetails: function() {
+    wx:wx.navigateTo({
+      url: '/pages/details/details'
+    })
   }
-  
+
 })

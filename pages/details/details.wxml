@@ -1,2 +1,67 @@
-<!--pages/details/details.wxml-->
-<text>pages/details/details.wxml</text>
+<view class="topDiv">
+  <view class="topDiv_in">
+    <view class="bigImg">
+      <image src="../../image/show03.jpg"></image>
+    </view>
+    <view class="chooseCard">
+      <view class="title">
+        <i class="iconfont icon-iconkpxd"></i>选择卡面
+      </view>
+      <view class="card">
+        <view class="cardOne active">
+          <image src="/image/show01.jpg"></image>
+        </view>
+        <view class="cardOne">
+          <image src="/image/show02.jpg"></image>
+        </view>
+        <view class="cardOne">
+          <image src="/image/show03.jpg"></image>
+        </view>
+        <view class="cardOne">
+          <image src="/image/show04.jpg"></image>
+        </view>
+        <view class="cardOne">
+          <image src="/image/show05.jpg"></image>
+        </view>
+        <view class="cardOne">
+          <image src="/image/show06.jpg"></image>
+        </view>
+      </view>
+    </view>
+
+    <view class="chooseCard present">
+      <view class="title">
+        <i class="iconfont icon-iconset0293"></i>选择礼品
+      </view>
+      <view class="card">
+        <view class="cardOne active">
+          <view class="price">50 元</view>
+          <view class="word">星礼卡</view>
+        </view>
+        <view class="cardOne">
+          <view class="price">50 元</view>
+          <view class="word">星礼卡</view>
+        </view>
+        <view class="cardOne">
+          <view class="price">50 元</view>
+          <view class="word">星礼卡</view>
+        </view>
+        <view class="cardOne">
+          <view class="price">50 元</view>
+          <view class="word">星礼卡</view>
+        </view>
+        <view class="cardOne">
+          <view class="price">50 元</view>
+          <view class="word">星礼卡</view>
+        </view>
+        <view class="cardOne">
+          <view class="price">50 元</view>
+          <view class="word">星礼卡</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="downDiv">
+  <view class="downDiv_in"></view>
+</view>

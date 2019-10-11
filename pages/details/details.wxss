@@ -1,1 +1,93 @@
-/* pages/details/details.wxss */
+@import "/pages/iconfont.wxss";
+
+.topDiv {
+  width: 100%;
+  color: #ababab;
+}
+
+.topDiv_in, .downDiv_in {
+  width: 94%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.downDiv {
+  width: 100%;
+  background: #fff;
+  height: 800rpx;
+  margin-top: 40rpx;
+  overflow: hidden;
+}
+
+.bigImg, .bigImg image {
+  width: 100%;
+  height: 400rpx;
+}
+
+.bigImg {
+  margin-top: 20rpx;
+}
+
+.chooseCard {
+  margin-top: 40rpx;
+}
+
+.chooseCard .title {
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #2b2b2b;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #ccc;
+}
+
+.cardOne {
+  width: 30%;
+  height: 140rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+  border: 4rpx solid white;
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+
+.cardOne image {
+  width: 100%;
+  height: 140rpx;
+}
+
+.cardOne.active {
+  border-color: green;
+}
+
+.present {
+  margin-top: 0rpx;
+}
+
+.present .cardOne {
+  border-color: #ccc;
+}
+
+.present .cardOne.active {
+  border-color: green;
+}
+
+.cardOne .price {
+  margin-top: 20rpx;
+  font-size: 40rpx;
+}
+
+.cardOne .word {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+}
+
+.present .card {
+  border-bottom: 0;
+  padding-bottom: 20rpx;
+}
