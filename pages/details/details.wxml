@@ -1,67 +1,59 @@
-<view class="topDiv">
-  <view class="topDiv_in">
-    <view class="bigImg">
-      <image src="../../image/show03.jpg"></image>
-    </view>
-    <view class="chooseCard">
-      <view class="title">
-        <i class="iconfont icon-iconkpxd"></i>选择卡面
+<view style="background:#ddd">
+  <view class="topDiv">
+    <view class="topDiv_in">
+      <view class="bigImg">
+        <image src="{{bigImg}}"></image>
       </view>
-      <view class="card">
-        <view class="cardOne active">
-          <image src="/image/show01.jpg"></image>
+      <view class="chooseCard">
+        <view class="title">
+          <i class="iconfont icon-iconkpxd"></i>选择卡面
         </view>
-        <view class="cardOne">
-          <image src="/image/show02.jpg"></image>
-        </view>
-        <view class="cardOne">
-          <image src="/image/show03.jpg"></image>
-        </view>
-        <view class="cardOne">
-          <image src="/image/show04.jpg"></image>
-        </view>
-        <view class="cardOne">
-          <image src="/image/show05.jpg"></image>
-        </view>
-        <view class="cardOne">
-          <image src="/image/show06.jpg"></image>
+        <view class="card">
+          <view class=' {{ index == defaultIndex ? "cardOne active" : "cardOne" }}' wx:for="{{cardList}}" wx:key="{{index}}" bindtap="cardTap" data-index="{{index}}" data-defaultIndex="{{defaultIndex}}">
+            <image src="{{item}}"></image>
+          </view>
         </view>
       </view>
-    </view>
 
-    <view class="chooseCard present">
-      <view class="title">
-        <i class="iconfont icon-iconset0293"></i>选择礼品
-      </view>
-      <view class="card">
-        <view class="cardOne active">
-          <view class="price">50 元</view>
-          <view class="word">星礼卡</view>
+      <view class="chooseCard present">
+        <view class="title">
+          <i class="iconfont icon-iconset0293"></i>选择礼品
         </view>
-        <view class="cardOne">
-          <view class="price">50 元</view>
-          <view class="word">星礼卡</view>
-        </view>
-        <view class="cardOne">
-          <view class="price">50 元</view>
-          <view class="word">星礼卡</view>
-        </view>
-        <view class="cardOne">
-          <view class="price">50 元</view>
-          <view class="word">星礼卡</view>
-        </view>
-        <view class="cardOne">
-          <view class="price">50 元</view>
-          <view class="word">星礼卡</view>
-        </view>
-        <view class="cardOne">
-          <view class="price">50 元</view>
-          <view class="word">星礼卡</view>
+        <view class="card">
+          <view class='{{index==moneyIndex ? "cardOne active" :"cardOne"}}' wx:for="{{moneyList}}" wx:index="{{index}}" bindtap="moneyTap" data-index="{{index}}" data-defaultIndex="{{moneyIndex}}">
+            <view class="price">{{item}} 元</view>
+            <view class="word">星礼卡</view>
+          </view>
         </view>
       </view>
     </view>
   </view>
+  <view class="downDiv">
+    <view class="downDiv_in">
+      <view class="line line1">
+        <view class="line_l">适用门店</view>
+        <view class="line_r">查看全部门店</view>
+      </view>
+      <view class="line">
+        <view class="line_l">可用时段</view>
+        <view class="line_r">2017.02.14-2020.02.13 周一至周日 全天</view>
+      </view>
+      <view class="line3">
+        <view class="line_l">使用须知</view>
+        <view class="line_r">
+          <view>-电子星礼卡的有效期为激活(或末次充値,若适用)之日起三年;</view>
+          <view>-您可以在中国大陆境内任意星巴克门店(部分门店除外,详情请见《星巴克用星说社交礼品平台须知》购买其出售的指定商品;</view>
+          <view>-此电子星礼卡可多次使用, 不可兑换现金, 不找零;</view>
+          <view>-使用电子星礼卡在门店消费时, 同时出示有效星享卡累积星星。</view>
+        </view>
+      </view>
+      <view class="line line4">
+        <view class="line_l">购买须知 </view>
+        <view class="line_r">査看内容</view>
+      </view>
+    </view>
+  </view>
 </view>
-<view class="downDiv">
-  <view class="downDiv_in"></view>
+<view class="btn">
+  <button type="primary">购买并赠送</button>
 </view>

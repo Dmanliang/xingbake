@@ -3,6 +3,7 @@
 .topDiv {
   width: 100%;
   color: #ababab;
+  background: #fff;
 }
 
 .topDiv_in, .downDiv_in {
@@ -13,10 +14,11 @@
 
 .downDiv {
   width: 100%;
-  background: #fff;
-  height: 800rpx;
   margin-top: 40rpx;
   overflow: hidden;
+  color: #ababab;
+  background: #fff;
+  margin-bottom: 120rpx;
 }
 
 .bigImg, .bigImg image {
@@ -51,7 +53,7 @@
   height: 140rpx;
   border-radius: 10rpx;
   overflow: hidden;
-  border: 4rpx solid white;
+  border: 2rpx solid white;
   margin-bottom: 20rpx;
   text-align: center;
 }
@@ -90,4 +92,61 @@
 .present .card {
   border-bottom: 0;
   padding-bottom: 20rpx;
+}
+
+.line {
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.line3 {
+  height: auto;
+  overflow: hidden;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.line_l {
+  float: left;
+  width: 20%;
+}
+
+.line_r {
+  float: right;
+  width: 76%;
+}
+
+.line3 .line_l {
+  float: left;
+  width: 20%;
+  margin-top: 26rpx;
+}
+
+.line3 .line_r {
+  line-height: 50rpx;
+  margin-top: 26rpx;
+  padding-bottom: 26rpx;
+}
+
+.line1 .line_r {
+  color: #357cda;
+}
+
+.line4 .line_r {
+  color: #357cda;
+}
+
+.btn {
+  width: 100%;
+  height: 120rpx;
+  border-top: 1rpx solid #ccc;
+  backgroud: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.btn button {
+  margin-top: 10rpx;
+  width: 96%;
 }
