@@ -20,7 +20,7 @@
           <i class="iconfont icon-iconset0293"></i>选择礼品
         </view>
         <view class="card">
-          <view class='{{index==moneyIndex ? "cardOne active" :"cardOne"}}' wx:for="{{moneyList}}" wx:index="{{index}}" bindtap="moneyTap" data-index="{{index}}" data-defaultIndex="{{moneyIndex}}">
+          <view class='{{index==moneyIndex ? "cardOne active" :"cardOne"}}' wx:for="{{moneyList}}" wx:index="{{index}}" bindtap="moneyTap" data-index="{{index}}" data-moneyIndex="{{moneyIndex}}">
             <view class="price">{{item}} 元</view>
             <view class="word">星礼卡</view>
           </view>

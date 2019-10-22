@@ -17,7 +17,6 @@ Page({
   },
 
   cardTap : function(e){
-    console.log(e.currentTarget.dataset);
     this.setData({
       defaultIndex: e.currentTarget.dataset.index,
       bigImg: this.data.cardList[e.currentTarget.dataset.index]
